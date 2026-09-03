@@ -52,6 +52,16 @@ export const courses: Course[] = [
     lecturers: ["L. Manager"],
     certificates: ["Certificate: Strategy"],
     recentlyAdded: true
+  },
+  {
+    id: "c4",
+    title: "FEA through simulation",
+    description: "Hands-on workshop on software tools for FEA analysis",
+    capabilities: ["strategy", "org-competence"],
+    roles: ["Management"],
+    lecturers: ["L. Manager"],
+    certificates: ["Certificate: Strategy"],
+    recentlyAdded: false
   }
 ];
 
@@ -62,6 +72,13 @@ export const transitionPaths: TransitionPath[] = [
     introVideo: "https://www.youtube.com/embed/dQw4w9WgXcQ",
     capabilities: ["data", "sensing", "predictive-maintenance", "strategy"],
     courses: ["c1", "c2", "c3"]
+  },
+  {
+    id: "tp-Mechatronics",
+    title: "Mechatronics System Design",
+    introVideo: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    capabilities: ["data", "sensing", "predictive-maintenance", "strategy"],
+    courses: ["c4"]
   }
 ];
 
