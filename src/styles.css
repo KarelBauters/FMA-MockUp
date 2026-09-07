@@ -3,13 +3,16 @@
   --fm-accent:#1F1F1F;
   --fm-tekst:#FFFFFF;
 }
+/* Make the page fill the viewport and use a column flex layout so the footer can stick to the bottom */
+html, body {height:100%;}
 body{font-family:system-ui,Arial; margin:0; color:#222}
+.app{display:flex;flex-direction:column;min-height:100vh}
+.app main{flex:1;padding:20px}
 .header{display:flex;gap:22px;align-items:center;padding:20px; border-radius:12px; background:var(--fm-blue);color:var(--fm-tekst)}
 .header .brand{display:flex;align-items:center;gap:8px}
 .logo{height:72px}
 .header nav a{margin-right:12px;color:white;text-decoration:none}
 .search input{padding:6px}
-.app main{padding:20px}
 .page{max-width:1000px;margin:0 auto;background:white;padding:20px;border-radius:12px;border:2px solid var(--fm-accent); max-width:1000px}
 footer.footer{background:var(--fm-accent);color:var(--fm-tekst); margin:0 auto;padding:20px;text-align:center;margin-top:auto; border-radius:12px; max-width:1000px}
 .modal{position:fixed;inset:0;background:rgba(0,0,0,0.4);display:flex;align-items:center;justify-content:center}
