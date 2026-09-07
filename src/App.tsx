@@ -23,7 +23,7 @@ export default function App() {
         </Routes>
       </main>
       <footer className="footer">
-        <p>&copy Flanders Make <br> 2026</p>
+        <p>&copy Flanders Make </br> 2026</p>
       </footer>
     </div>
   );
