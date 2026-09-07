@@ -9,7 +9,7 @@ export default function Header() {
     <header className="header">
       <div className="brand">
         <img src="/logo-fm.png" alt="Flanders Make" className="logo" />
-        <Link to="/"><h1>Flanders Make Academy</h1></Link>
+        <Link to="/"><h1>FMAcademy</h1></Link>
       </div>
       <nav>
         <Link to="/"><span>Home</span></Link>
