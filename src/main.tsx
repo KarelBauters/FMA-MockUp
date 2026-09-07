@@ -8,7 +8,7 @@ import { AuthProvider } from "./auth";
 createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
     <AuthProvider>
-      <BrowserRouter>
+      <BrowserRouter basename="/FMA-MockUp/">
         <App />
       </BrowserRouter>
     </AuthProvider>
