@@ -8,7 +8,7 @@ export default function Header() {
   return (
     <header className="header">
       <div className="brand">
-        <img src="/logo-fm.png" alt="Flanders Make" className="logo" />
+        <img src="/logo-fm.svg" alt="logo missing" className="logo" />
         <Link to="/"><h1>FMAcademy</h1></Link>
       </div>
       <nav>
