@@ -3,7 +3,7 @@ name: Build and Deploy Frontend App
 on:
   push:
     branches:
-      - main # Triggers when you push to the main branch
+      - main # Triggers when you push to the main branch 
 
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
