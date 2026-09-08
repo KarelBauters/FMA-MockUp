@@ -53,6 +53,7 @@ export const courses: Course[] = [
     roles: ["Management"],
     lecturer: "L. Manager",
     certificates: ["Certificate: Strategy"],
+    upcomingDates: [{ date: "2026-09-21", location: "Lommel" }],
     recentlyAdded: true
   },
   {
@@ -63,6 +64,7 @@ export const courses: Course[] = [
     roles: ["Management"],
     lecturer: "L. Manager",
     certificates: ["Certificate: Strategy"],
+    upcomingDates: [{ date: "2026-09-22", location: "Online" }],
     recentlyAdded: false
   }
 ];
