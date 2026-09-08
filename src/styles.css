@@ -85,6 +85,7 @@ body{font-family:system-ui,Arial; margin:0; color:#222}
   flex-direction: column;
   gap: 6px;
   scroll-snap-align: start;
+  border: 2px solid var(--fm-blue);
 }
 
 .upcoming-title {
