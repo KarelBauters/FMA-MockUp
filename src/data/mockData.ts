@@ -5,7 +5,7 @@ export type Course = {
   capabilities: string[]; // tags
   roles: string[]; // who it's for
   externalLink?: string;
-  lecturers?: string[];
+  lecturer?: string;
   certificates?: string[];
   upcomingDates?: { date: string; location?: string }[];
   recentlyAdded?: boolean;
@@ -28,7 +28,7 @@ export const courses: Course[] = [
     description: "Intro to cyber-physical systems and data-driven manufacturing.",
     capabilities: ["digitalization", "data"],
     roles: ["R&D", "Management"],
-    lecturers: ["Prof. J. Demo"],
+    lecturer: "Prof. J. Demo",
     certificates: ["Participation"],
     upcomingDates: [{ date: "2026-10-10", location: "Leuven" }],
     recentlyAdded: false
@@ -40,7 +40,7 @@ export const courses: Course[] = [
     capabilities: ["sensing", "data", "predictive-maintenance"],
     roles: ["Technician", "R&D"],
     externalLink: "https://example-course-provider.com/pdm",
-    lecturers: ["Dr. A. Expert"],
+    lecturer: "Dr. A. Expert",
     certificates: ["Badge: Predictive Maintenance"],
     upcomingDates: [{ date: "2026-09-20", location: "Gent" }],
     recentlyAdded: true
@@ -51,7 +51,7 @@ export const courses: Course[] = [
     description: "For management: strategy and capability building.",
     capabilities: ["strategy", "org-competence"],
     roles: ["Management"],
-    lecturers: ["L. Manager"],
+    lecturer: "L. Manager",
     certificates: ["Certificate: Strategy"],
     recentlyAdded: true
   },
@@ -61,7 +61,7 @@ export const courses: Course[] = [
     description: "Hands-on workshop on software tools for FEA analysis",
     capabilities: ["strategy", "org-competence"],
     roles: ["Management"],
-    lecturers: ["L. Manager"],
+    lecturer: "L. Manager",
     certificates: ["Certificate: Strategy"],
     recentlyAdded: false
   }
