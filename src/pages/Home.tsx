@@ -39,7 +39,7 @@ export default function Home() {
       
       <section className="section">
         <div className= "frame">
-        <h3>Upcoming</h3>
+        <h2>Upcoming</h2>
         <div className="upcoming-scroll">
           {upcoming.map((e) => {
             const path = transitionPaths.find((p) => p.id === e.path);
