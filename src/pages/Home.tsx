@@ -36,7 +36,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-
+      
       <section className="section">
         <h3>Upcoming</h3>
         <div className="upcoming-scroll">
