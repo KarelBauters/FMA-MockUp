@@ -8,7 +8,7 @@ export default function Header() {
   return (
     <header className="header">
       <div className="brand">
-        <img src="/logo.jpeg" alt="logo missing" className="logo" />
+        <img src={`${process.env.PUBLIC_URL}/logo.jpeg`} alt="logo missing" className="logo" />
         <Link to="/"><h1>FMAcademy</h1></Link>
       </div>
       <nav>
