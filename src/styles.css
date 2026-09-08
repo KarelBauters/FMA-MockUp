@@ -70,7 +70,7 @@ body{font-family:system-ui,Arial; margin:0; color:#222}
 }
 .header nav a{margin-right:12px;color:white;text-decoration:none}
 .search input{padding:6px}
-.page{max-width:1000px;margin:0 auto;background:white;padding:20px;border-radius:12px;border:2px solid var(--fm-accent); max-width:1000px}
+.page{max-width:1000px;margin:0 auto;background:white;padding:20px;border-radius:0px;border:0px solid var(--fm-accent); max-width:1000px}
 footer.footer{width:100%; background:var(--fm-accent);color:var(--fm-tekst);padding:20px;text-align:center;margin-top:auto; border-radius:0px}
 .footer-inner{max-width: 1000px; margin: 0 auto; padding: 0 20; box-sizing: border-box} 
 .modal{position:fixed;inset:0;background:rgba(0,0,0,0.4);display:flex;align-items:center;justify-content:center}
