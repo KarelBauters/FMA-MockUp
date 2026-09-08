@@ -2,6 +2,7 @@
   --fm-blue:#00BDAF;
   --fm-accent:#1F1F1F;
   --fm-tekst:#FFFFFF;
+  --fm-black:#000000;
 }
 /* Make the page fill the viewport and use a column flex layout so the footer can stick to the bottom */
 html, body {height:100%;}
@@ -12,6 +13,9 @@ body{font-family:system-ui,Arial; margin:0; color:#222}
 .header .brand{display:flex;align-items:center;gap:8px}
 .logo{height:72px}
 .brand h1 {font-size: 24px;color:var(--fm-accent);margin: 0;padding: 0}
+.section h1 {font-size: 18px;color:var(--fm-accent);margin: 0;padding: 0}
+.section h2 {font-size: 14px;color:var(--fm-blue);margin: 0;padding: 0}
+.section h3 {font-size: 12px;color:var(--fm-black);margin: 0;padding: 0}
 .header nav a{margin-right:12px;color:white;text-decoration:none}
 .search input{padding:6px}
 .page{max-width:1000px;margin:0 auto;background:white;padding:20px;border-radius:12px;border:2px solid var(--fm-accent); max-width:1000px}
