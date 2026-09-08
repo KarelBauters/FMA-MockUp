@@ -13,14 +13,25 @@ export default function Home() {
       </section>
 
       <section className="section">
-        <h3>Transition paths</h3>
-        <ul>
-          {transitionPaths.map((p) => (
-            <li key={p.id}>
-              <Link to={`/path/${p.id}`}>{p.title}</Link>
-            </li>
-          ))}
-        </ul>
+        <div className="transition-frame">
+          <div className="transition-grid">
+            {(transitionPaths as TransitionPathTile[]).map((p) => (
+              <article key={p.id} className="transition-tile">
+                <div className="transition-image-placeholder">Image placeholder</div>
+
+                <h4 className="transition-title">
+                  <Link to={`/path/${p.id}`}>{p.title}</Link>
+                </h4>
+
+                <p className="transition-description">
+                  {p.description || "Short description placeholder for this transition path."}
+                </p>
+
+                <p className="transition-meta">{p.courseCount ?? 0} courses</p>
+              </article>
+            ))}
+          </div>
+        </div>
       </section>
 
       <section className="section">
