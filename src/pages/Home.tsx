@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { transitionPaths, upcoming, recentlyAdded } from "../data/mockData";
+import { transitionPaths, upcoming, recentlyAdded, courses } from "../data/mockData";
 import FeedbackModal from "../components/FeedbackModal";
 
 export default function Home() {
@@ -39,7 +39,30 @@ export default function Home() {
 
       <section className="section">
         <h3>Upcoming</h3>
-        <ul>{upcoming.map((e) => <li key={e.id}>{e.title}</li>)}</ul>
+        <div className="upcoming-scroll">
+          {upcoming.map((e) => {
+            const path = transitionPaths.find((p) => p.id === e.path);
+            const course = courses.find((c) => c.id === (e as { courseId?: string }).courseId);
+            const upcomingDate = course?.upcomingDates?.[0];
+
+            return (
+              <article key={e.id} className="upcoming-tile">
+                <h4 className="upcoming-title">
+                  {course ? <Link to={`/course/${course.id}`}>{course.title}</Link> : e.title}
+                </h4>
+                <p className="upcoming-path">
+                  {path ? <Link to={`/path/${path.id}`}>{path.title}</Link> : "Transition path unavailable"}
+                </p>
+                <p className="upcoming-lecturer">{course?.lecturer ?? "Lecturer to be announced"}</p>
+                <p className="upcoming-date">
+                  {upcomingDate
+                    ? `${upcomingDate.date}${upcomingDate.location ? ` — ${upcomingDate.location}` : ""}`
+                    : "Date to be announced"}
+                </p>
+              </article>
+            );
+          })}
+        </div>
       </section>
 
       <section className="section">

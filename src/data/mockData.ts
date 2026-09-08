@@ -89,8 +89,8 @@ export const transitionPaths: TransitionPath[] = [
 ];
 
 export const upcoming = [
-  { id: "e1", title: "Predictive Maintenance — 20 Sep 2026", path: "tp-digitalization" },
-  { id: "e2", title: "Digitalization Foundations — 10 Oct 2026", path: "tp-digitalization" }
+  { id: "e1", title: "Predictive Maintenance — 20 Sep 2026", path: "tp-digitalization", courseId: "c2" },
+  { id: "e2", title: "Digitalization Foundations — 10 Oct 2026", path: "tp-digitalization", courseId: "c1" }
 ];
 
 export const recentlyAdded = [

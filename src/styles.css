@@ -68,6 +68,41 @@ body{font-family:system-ui,Arial; margin:0; color:#222}
   font-size: 13px;
   color: #666;
 }
+.upcoming-scroll {
+  display: flex;
+  gap: 16px;
+  overflow-x: auto;
+  padding-bottom: 8px;
+  scroll-snap-type: x proximity;
+}
+
+.upcoming-tile {
+  flex: 0 0 auto;
+  width: calc((100% - 32px) / 3);
+  min-width: 220px;
+  border: 1px solid #e6e6e6;
+  border-radius: 10px;
+  padding: 12px;
+  background: #fafafa;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  scroll-snap-align: start;
+}
+
+.upcoming-title {
+  margin: 0;
+  font-size: 16px;
+}
+
+.upcoming-path,
+.upcoming-lecturer,
+.upcoming-date {
+  margin: 0;
+  font-size: 13px;
+  color: #555;
+}
+
 .header nav a{margin-right:12px;color:white;text-decoration:none}
 .search input{padding:6px}
 .page{max-width:1000px;margin:0 auto;background:white;padding:20px;border-radius:0px;border:0px solid var(--fm-accent); max-width:1000px}
