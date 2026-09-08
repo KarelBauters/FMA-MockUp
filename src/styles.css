@@ -11,6 +11,7 @@ body{font-family:system-ui,Arial; margin:0; color:#222}
 .header{display:flex;gap:22px;align-items:center;padding:20px; border-radius:12px; background:var(--fm-blue);color:var(--fm-tekst)}
 .header .brand{display:flex;align-items:center;gap:8px}
 .logo{height:72px}
+.brand h1 {font-size: 24px;color:var(--fm-accent);margin: 0;padding: 0}
 .header nav a{margin-right:12px;color:white;text-decoration:none}
 .search input{padding:6px}
 .page{max-width:1000px;margin:0 auto;background:white;padding:20px;border-radius:12px;border:2px solid var(--fm-accent); max-width:1000px}
