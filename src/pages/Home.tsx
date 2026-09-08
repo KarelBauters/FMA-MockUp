@@ -22,7 +22,7 @@ export default function Home() {
                 <h4 className="transition-title">
                   <Link to={`/path/${p.id}`}>{p.title}</Link>
                 </h4>
-                <div className="transition-image-placeholder">Image placeholder</div>
+                <img src={`${import.meta.env.BASE_URL}logo.jpeg`} alt="logo missing" className="transition-image-placeholder" />
                 <p className="transition-description">
                   {p.description || "Short description placeholder for this transition path."}
                 </p>
