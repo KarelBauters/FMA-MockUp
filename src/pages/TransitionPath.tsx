@@ -49,7 +49,7 @@ export default function TransitionPath() {
       <section className="section">
         <h2>Meet our Experts!</h2>
         {list.map((c) => (
-          c.lecturer
+        <li key={c.id}> c.lecturer</li>
         ))}
       </section>
       
