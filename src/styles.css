@@ -17,6 +17,57 @@ body{font-family:system-ui,Arial; margin:0; color:#222}
 .section h2 {font-size: 16px;color:var(--fm-blue);margin: 0;padding: 0}
 .section h3 {font-size: 14px;color:var(--fm-black);margin: 0;padding: 0}
 .hero h2 {font-size: 22px;color:var(--fm-blue);margin: 0;padding: 0}
+.transition-frame {
+  border: 1px solid #d9d9d9;
+  border-radius: 12px;
+  padding: 16px;
+  background: #fff;
+}
+
+.transition-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 16px;
+}
+
+.transition-tile {
+  border: 1px solid #e6e6e6;
+  border-radius: 10px;
+  padding: 12px;
+  background: #fafafa;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.transition-image-placeholder {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 8px;
+  background: #e9ecef;
+  color: #6c757d;
+  font-size: 14px;
+  font-weight: 500;
+  display: grid;
+  place-items: center;
+}
+
+.transition-title {
+  margin: 0;
+  font-size: 16px;
+}
+
+.transition-description {
+  margin: 0;
+  font-size: 14px;
+  color: #555;
+}
+
+.transition-meta {
+  margin: 0;
+  font-size: 13px;
+  color: #666;
+}
 .header nav a{margin-right:12px;color:white;text-decoration:none}
 .search input{padding:6px}
 .page{max-width:1000px;margin:0 auto;background:white;padding:20px;border-radius:12px;border:2px solid var(--fm-accent); max-width:1000px}
