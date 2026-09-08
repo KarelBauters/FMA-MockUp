@@ -17,12 +17,12 @@ export default function Home() {
           <div className="transition-grid">
             {(transitionPaths as TransitionPathTile[]).map((p) => (
               <article key={p.id} className="transition-tile">
-                <div className="transition-image-placeholder">Image placeholder</div>
+                
 
                 <h4 className="transition-title">
                   <Link to={`/path/${p.id}`}>{p.title}</Link>
                 </h4>
-
+                <div className="transition-image-placeholder">Image placeholder</div>
                 <p className="transition-description">
                   {p.description || "Short description placeholder for this transition path."}
                 </p>
