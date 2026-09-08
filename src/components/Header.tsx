@@ -9,7 +9,7 @@ export default function Header() {
     <header className="header">
       <div className="brand">
         <img src={`${import.meta.env.BASE_URL}logo.jpeg`} alt="logo missing" className="logo" />
-        <Link to="/"><h1>FMAcademy</h1></Link>
+        <h1>FMAcademy</h1>
       </div>
       <nav>
         <Link to="/"><span>Home</span></Link>
