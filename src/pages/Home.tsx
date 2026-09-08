@@ -12,7 +12,7 @@ export default function Home() {
         <p>Mock demo: view portfolios, personalize learning with the capability navigator and track company progress.</p>
       </section>
 
-      <section>
+      <section classname="section">
         <h3>Transition paths</h3>
         <ul>
           {transitionPaths.map((p) => (
@@ -23,12 +23,12 @@ export default function Home() {
         </ul>
       </section>
 
-      <section>
+      <section classname="section">
         <h3>Upcoming</h3>
         <ul>{upcoming.map((e) => <li key={e.id}>{e.title}</li>)}</ul>
       </section>
 
-      <section>
+      <section classname="section">
         <h3>Recently added</h3>
         <ul>{recentlyAdded.map((r) => <li key={r.id}>{r.title}</li>)}</ul>
       </section>
