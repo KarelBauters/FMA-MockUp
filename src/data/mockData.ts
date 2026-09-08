@@ -18,6 +18,7 @@ export type TransitionPath = {
   capabilities: string[]; // high level capabilities/subdomains
   courses: string[]; // course ids
   description: string;
+  visual?: string;
 };
 
 export const courses: Course[] = [
@@ -73,7 +74,8 @@ export const transitionPaths: TransitionPath[] = [
     introVideo: "https://www.youtube.com/embed/dQw4w9WgXcQ",
     capabilities: ["data", "sensing", "predictive-maintenance", "strategy"],
     courses: ["c1", "c2", "c3"],
-    description: "Learn how Digitization and Data will help to transform your production!"
+    description: "Learn how Digitization and Data will help to transform your production!",
+    visual: "tp-digitization.jpg"
   },
   {
     id: "tp-Mechatronics",
@@ -81,7 +83,8 @@ export const transitionPaths: TransitionPath[] = [
     introVideo: "https://www.youtube.com/embed/dQw4w9WgXcQ",
     capabilities: ["data", "sensing", "predictive-maintenance", "strategy"],
     courses: ["c4"],
-    description: "Learn to design the smart machines of the future"
+    description: "Learn to design the smart machines of the future",
+    visual: "tp-mechatronics.jpg"
   }
 ];
 
