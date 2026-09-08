@@ -38,6 +38,7 @@ export default function Home() {
       </section>
       
       <section className="section">
+        <div className= "upcoming-frame">
         <h3>Upcoming</h3>
         <div className="upcoming-scroll">
           {upcoming.map((e) => {
@@ -62,6 +63,7 @@ export default function Home() {
               </article>
             );
           })}
+        </div>
         </div>
       </section>
 
