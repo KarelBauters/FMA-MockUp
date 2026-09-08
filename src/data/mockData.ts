@@ -72,7 +72,7 @@ export const transitionPaths: TransitionPath[] = [
     title: "Digitalization & Data",
     introVideo: "https://www.youtube.com/embed/dQw4w9WgXcQ",
     capabilities: ["data", "sensing", "predictive-maintenance", "strategy"],
-    courses: ["c1", "c2", "c3"]
+    courses: ["c1", "c2", "c3"],
     description: "Learn how Digitization and Data will help to transform your production!"
   },
   {
@@ -80,7 +80,7 @@ export const transitionPaths: TransitionPath[] = [
     title: "Mechatronics System Design",
     introVideo: "https://www.youtube.com/embed/dQw4w9WgXcQ",
     capabilities: ["data", "sensing", "predictive-maintenance", "strategy"],
-    courses: ["c4"]
+    courses: ["c4"],
     description: "Learn to design the smart machines of the future"
   }
 ];
