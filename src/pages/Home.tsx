@@ -13,7 +13,7 @@ export default function Home() {
       </section>
 
       <section className="section">
-        <div className="transition-frame">
+        <div className="frame">
           <h2>Transition Paths</h2>
           <div className="transition-grid">
             {(transitionPaths as TransitionPathTile[]).map((p) => (
@@ -38,7 +38,7 @@ export default function Home() {
       </section>
       
       <section className="section">
-        <div className= "upcoming-frame">
+        <div className= "frame">
         <h3>Upcoming</h3>
         <div className="upcoming-scroll">
           {upcoming.map((e) => {
