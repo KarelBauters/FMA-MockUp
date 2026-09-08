@@ -46,6 +46,13 @@ export default function TransitionPath() {
         ))}
       </ul>
 
+      <section className="section">
+        <h2>Meet our Experts!</h2>
+        {list.map((c) => (
+          c.lecturer
+        ))}
+      </section>
+      
       <button onClick={() => setShowFeedback(true)}>Give feedback on this path</button>
       {showFeedback && <FeedbackModal onClose={() => setShowFeedback(false)} />}
     </div>
