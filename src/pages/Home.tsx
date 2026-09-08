@@ -14,6 +14,7 @@ export default function Home() {
 
       <section className="section">
         <div className="transition-frame">
+          <h2>Transition Paths</h2>
           <div className="transition-grid">
             {(transitionPaths as TransitionPathTile[]).map((p) => (
               <article key={p.id} className="transition-tile">
