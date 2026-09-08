@@ -27,7 +27,9 @@ export default function Home() {
                   {p.description || "Short description placeholder for this transition path."}
                 </p>
 
-                <p className="transition-meta">{p.courseCount ?? 0} courses</p>
+                <p className="transition-meta">
+                  {p.courses.length} {p.courses.length === 1 ? "course" : "courses"}
+                </p>
               </article>
             ))}
           </div>
